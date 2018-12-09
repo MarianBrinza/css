@@ -5,5 +5,3 @@
 
 
 Note: this is my own code (no copy-paste from someone else)
-
-Credits for the idea goes to YouTube channel: <a href="https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog"           target="_blank">Online Tutorials</a>
