@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>Monitor shape</title>
+
+    <script>
+        var showBubble = false;
+
+        function showDesktopWallpaper() {
+            let wallpaper = document.getElementById("wallpaper");
+            let speakBubble = document.getElementsByClassName('speak-bubble')[0];
+
+            if (wallpaper.style.display === "none" || wallpaper.style.display === "") {
+                wallpaper.style.display = "block";
+                speakBubble.style.display = "block";
+                showBubble = true;
+            } else {
+                wallpaper.style.display = "none";
+                speakBubble.style.display = "none";
+                showBubble = false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="center">
+        <p>turn me on <i class="fas fa-smile-wink"></i></p>
+        <div id="monitor">
+            <img id="wallpaper" src="pulsar.jpg" alt="macos desktop wallpaper">
+            <i class="fas fa-power-off" onclick="showDesktopWallpaper()"></i>
+        </div>
+    </div>
+
+    <div class="credits">
+        <p>Note: this is my own work!</p>
+        <p>Credits for the idea goes to YouTube channel: <a href="https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog"
+                target="_blank">Online
+                Tutorials</a></p>
+        <p>Tutorial available on YouTube channel: <a href="https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog"
+            target="_blank">Online
+            Tutorials</a></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+body{
+    background: hotpink;
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    clear: both;
+}
+
+.container ul{
+    padding: 30px;
+    margin: 0;
+    border: 10px solid white;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+ .container ul li{
+    list-style-type: none;
+    color: white;
+    float: left;
+    font-size: 6em ;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.9s;
+}
+
+.container ul:hover li{
+transform: rotateY(360deg);
+}
+.container ul:hover li:nth:nth-child(1){
+    transition-delay: 0.9s;
+}
+
+.container ul:hover li:nth:nth-child(2){
+    transition-delay:  0.6s;
+}
+.container ul:hover li:nth:nth-child(3){
+    transition-delay: 0.3s;
+}
+
+.credits {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: peachpuff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.credits p:first-child {
+    text-decoration: underline;
+    padding-bottom: 5px;
+    font-variant: small-caps;
+    font-weight: bold;
+}

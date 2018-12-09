@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(243, 201, 165, 0.993);
+}
+
+.span-container {
+    margin-left: 20px;
+}
+
+.loader {
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.loader span {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: all 0.5s;
+    animation: animate 2s infinite;
+}
+
+.loader span:nth-child(1) {
+    animation-delay: 0;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.loader span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.loader span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.loader span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.loader span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.loader span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.loader span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.loader span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.loader h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes animate {
+    0% {
+        border: 1px solid white;
+        background: transparent;
+        transform: translateY(0);
+    }
+
+    50% {
+        border: 1px solid white;
+        background: red;
+        transform: translateY(-25px);
+    }
+
+    100% {
+        border: 1px solid white;
+        background: yellow;
+        transform: translateY(0);
+    }
+}
+
+.credits {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: peachpuff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.credits p:first-child {
+    text-decoration: underline;
+    padding-bottom: 5px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
